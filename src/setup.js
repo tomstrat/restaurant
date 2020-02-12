@@ -14,11 +14,24 @@ const initSetup = () => {
     const paraThree = document.createElement("p");
     paraThree.innerHTML = "Stay a while, dine and basque";
 
+    const tabContainer = document.createElement("div");
+    tabContainer.classList = "tabContainer";
+
+    const tabTwo = document.createElement("a");
+    tabTwo.innerHTML = "Menu";
+    const tabThree = document.createElement("a");
+    tabThree.innerHTML = "Contact";
+
+    tabContainer.appendChild(tabTwo);
+    tabContainer.appendChild(tabThree);
+
     content.appendChild(banner);
     content.appendChild(title);
     content.appendChild(paraOne);
     content.appendChild(paraTwo);
     content.appendChild(paraThree);
+    content.appendChild(tabContainer);
+
 }
 
 export default initSetup;
