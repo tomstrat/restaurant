@@ -19,8 +19,10 @@ const initSetup = () => {
 
     const tabTwo = document.createElement("a");
     tabTwo.innerHTML = "Menu";
+    tabTwo.classList = "menuTab";
     const tabThree = document.createElement("a");
     tabThree.innerHTML = "Contact";
+    tabThree.classList = "contactTab";
 
     tabContainer.appendChild(tabTwo);
     tabContainer.appendChild(tabThree);
