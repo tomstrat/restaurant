@@ -12,11 +12,16 @@ menuTab.addEventListener("click", (e) =>{
     const tabContentContainer = document.querySelector(".tabContentContainer");
     tabContentContainer.remove();
     tabContainer.appendChild(showMenu());
+    contactTab.classList = "contactTab";
+    menuTab.classList += " noBorderBot";
 });
 contactTab.addEventListener("click", (e) =>{
     const tabContentContainer = document.querySelector(".tabContentContainer");
     tabContentContainer.remove();
     tabContainer.appendChild(showContact());
+    menuTab.classList = "menuTab";
+    contactTab.classList += " noBorderBot";
 });
 
 tabContainer.appendChild(showMenu());
+menuTab.classList += " noBorderBot";
