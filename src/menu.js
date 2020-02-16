@@ -1,5 +1,4 @@
 const showMenu = () => {
-    const tabContainer = document.querySelector(".tabContainer");
 
     const menuHolder = document.createElement("div");
     menuHolder.classList = "tabContentContainer";
@@ -37,7 +36,7 @@ const showMenu = () => {
     menuHolder.appendChild(mainTwo);
     menuHolder.appendChild(mainThree);
 
-    tabContainer.appendChild(menuHolder);
+    return menuHolder;
 }
 
 export default showMenu;

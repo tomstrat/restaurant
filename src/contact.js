@@ -1,11 +1,10 @@
 const showContact = () => {
-    const tabContainer = document.querySelector(".tabContainer");
 
     const contactHolder = document.createElement("div");
     contactHolder.classList = "tabContentContainer";
 
     const contactTitle = document.createElement("h2");
-    menuTitle.innerHTML = "Contact";
+    contactTitle.innerHTML = "Contact";
 
     const phone = document.createElement("h3");
     phone.innerHTML = "Phone:"
@@ -28,4 +27,18 @@ const showContact = () => {
     const addressFour = document.createElement("p");
     addressFour.innerHTML = "AU19 2XQ";
 
+    contactHolder.appendChild(contactTitle);
+    contactHolder.appendChild(phone);
+    contactHolder.appendChild(phoneNumber);
+    contactHolder.appendChild(email);
+    contactHolder.appendChild(emailAddress);
+    contactHolder.appendChild(address);
+    contactHolder.appendChild(addressOne);
+    contactHolder.appendChild(addressTwo);
+    contactHolder.appendChild(addressThree);
+    contactHolder.appendChild(addressFour);
+
+    return contactHolder;
 }
+
+export default showContact;
